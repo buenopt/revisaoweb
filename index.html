@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revisão de itens | Prova</title>
+    <!-- stilo -->
+    <style>
+      header img {
+        width: 120px;
+      }
+      /*Estilização em todo <nav>*/
+      nav {
+        background-color: blue;
+        padding: 10px; /* espaçamento */
+        text-align: center;
+      }
+      nav a {
+              color: white;
+              text-decoration: none;
+              margin: 0 20%;
+            }
+            /*Cria um efeito ao passar o mouse*/
+            nav a:hover { 
+              font-size: 20px;
+              color: red;
+              font-weight: bold;
+            }
+      /*Para iniciar uma class colasse o "." ponto e nome da div, no nosso caso a class chamasse EXEMPLO, toda div que contiver class EXEMPLO irá herdar a estilização aqui utilizada */
+      .exemplo {
+        margin-top: 1%;          
+      }
+      /* Classe feita para div <radio>*/
+      .exemplo2 {
+        margin-top: 1%;
+      }
+      /*Estilização em todo <body>*/
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+.botao1 
+{
+    
+    font-size: 25px;
+                width: 100px;
+                height: 50px;
+                margin-left: 45%;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="img/logo-UNIP.png" alt="Logo UNIP" />
+    </header>
+    <nav>
+      <a href="index.html">Principal</a>
+      <a href="pages/sobre.html">Sobre</a>
+    </nav>
+    <section>
+      <h1>Revisão de itens</h1>
+      <p>Conteúdo utilizado nas aulas de desenvolvimento Web</p>
+      <p>Itens vistos referente ao uso de forms no desenvolvimento HTML5</p>
+      <p>É importante o uso de "div´s" na codificação para que os códigos estejam organizados </p>
+      <p> De forma visual e organizada use a estilização</p>
+      <hr />
+      <!-- Div responsável em criar barra horizontal-->
+      <!-- componente nome-->
+      <div class="exemplo">
+        <p>Neste campo existe a propriedade REQUIRED que deixa o campo como obrigatório ou necessidade de validação</p>
+        <form action="pages/sobre.html"> <!-- Inicio do FORMS-->
+        <label>Nome</label>
+        <!-- define um rótulo ao forms-->
+        <input type="text" required placeholder="Nome" />
+        <!-- placehorlder inseri um rótulo dentro do item do input-->
+      </div>
+      <!-- componente e-mail-->
+      <div class="exemplo">
+        <label>E-mail</label>
+        <input type="email" required placeholder="e-mail" />
+      </div>
+      <!-- Componente rádio-->
+      <hr />
+      <!-- Div responsável em criar barra horizontal-->
+      <div class="exemplo2">
+        <p>
+          O uso do form rádio auxilia em casos de opção, exemplo, ao aceitar um
+          termo entre outros, é necessário criar um agrupamento "name" para que seja selecionado apenas um item.
+        </p>
+        <label>Sexo</label>
+        <input type="radio" name="sexo" value="masculino" /> Masculino
+        <input type="radio" name="sexo" value="Feminino" /> Feminino
+      </div>
+      <hr />
+      <!-- Div responsável em criar barra horizontal-->
+      <div class="exemplo2">
+        <p>Checkbox serve para lista de tarefas entre outros</p>
+        <input type="checkbox" value="sim" /> Sim
+        <input type="checkbox" value="não" /> Não
+      </div>
+      <hr />
+      <!-- Div responsável em criar barra horizontal-->
+      <div class="exemplo">
+        <p>Uso de caixa de seleção use SELECT e OPTION</p>
+        <label>Estou estudando:</label>
+        <select>
+            <option value="pouco">Pouco</option>
+            <option value="muito">Muito</option>
+            <option value="muito2">Demais</option>
+        </select>
+      </div>
+<hr>
+<div class="exemplo">
+    <p>Para uso de data utilize a type DATE</p>
+            <!-- Controle de Data -->
+            <label>Data:</label>
+            <input type="date" >  
+</div>
+<hr>
+<div class="exemplo">
+    <!-- Envio de Arquivo -->
+    <p>Para uso de data utilize a type FILE</p>
+    <label>Enviar Arquivo:</label>
+    <input type="file" id="arquivo" name="arquivo">
+</div>
+<hr>
+<div class="exemplo">
+    <p>Utilizando área de texto</p>
+    <p>Diferente do TEXT, o área de texto exibe caixa maior, normalmente quando seja necessário texto longo</p>
+    <!-- Área de Texto -->
+    <label for="mensagem">Mensagem:</label>
+    <br>
+    <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea>
+</div>
+<hr>
+<!-- Botão de Envio -->
+<p>Para uso do botão no caso de troca de páginas é necessário utilizar a tag FORMS e o ACTION GET ou POST para que ao clicar no botão seja submetido o forms para alguma ação</p>
+<input class="botao1" type="submit" value="Enviar">
+</section>
+</form> <!-- Fim do FORMS-->
+    </body>
+  </body>
+</html>

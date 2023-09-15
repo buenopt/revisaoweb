@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revisão página 2 | Sobre você</title>
+    <!-- stilo -->
+    <style>
+      header img {
+        width: 120px;
+      }
+      /*Estilização em todo <nav>*/
+      nav {
+        background-color: red;
+        padding: 10px; /* espaçamento */
+        text-align: center;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 20%;
+      }
+      /*Cria um efeito ao passar o mouse*/
+      nav a:hover {
+        font-size: 20px;
+        color: yellow;
+        font-weight: bold;
+      }
+      section {
+        font-size: 22px;
+        text-align: center;
+        color: red;
+        font-weight: bold;
+        margin-top: 15%;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      /* estilização botão*/
+      .botao2 {
+        text-align: center;
+        margin-top: 5%;
+      }
+      /*Estilização apenas botão do item input*/
+      .botao2 input {
+        font-size: 25px;
+        width: 100px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="../img/logo-UNIP.png" alt="Logo UNIP" />
+    </header>
+    <nav>
+      <a href="../index.html">Principal</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+    <section>
+      <h1>Meu nome:</h1>
+      <p>Pedro Alvares Cabral</p>
+      <h2>Meu RA</h2>
+      <p>15092023</p>
+    </section>
+    <!-- botão voltar -->
+
+    <div class="botao2">
+      <p>
+        Exemplo de um botão voltar sem usar o submit, utilize a função
+        'onclick=history.back()'
+      </p>
+      <input type="button" value="Voltar" onclick="history.back()" />
+    </div>
+  </body>
+</html>
